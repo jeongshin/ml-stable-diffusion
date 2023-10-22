@@ -237,6 +237,7 @@ extension MLFeatureProvider {
     }
 }
 
+@available(iOS 12.0, *)
 extension MLBatchProvider {
     var arrayOfFeatureValueDictionaries: [[String : MLFeatureValue]] {
         (0..<self.count).map {

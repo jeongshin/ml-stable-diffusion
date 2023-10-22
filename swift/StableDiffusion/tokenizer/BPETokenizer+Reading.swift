@@ -49,6 +49,7 @@ extension BPETokenizer {
 }
 
 extension String {
+    @available(iOS 14.0, *)
     init(bytes: some Collection<UInt8>) {
         self.init(unsafeUninitializedCapacity: bytes.count) { pointer in
             _ = pointer.initialize(fromContentsOf: bytes)
